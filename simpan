@@ -1,0 +1,8 @@
+    $cari = mysqli_query($conn,"SELECT * FROM `data` order by id desc limit 1;");
+    $no = 0;
+    while($data=mysqli_fetch_array($cari)){
+      $id = $data['id'];
+      $author = $data['author'];
+      $quote = $data['quote'];
+      $no++;
+    }
